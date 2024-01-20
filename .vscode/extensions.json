@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "donjayamanne.python-extension-pack",
+    "github.vscode-pull-request-github",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "ms-python.gather",
+    "ms-python.isort",
+    "ms-python.mypy-type-checker",
+    "ms-python.pylint",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.datawrangler",
+    "ms-toolsai.jupyter-hub",
+    "ms-toolsai.jupyter",
+    "redhat.fabric8-analytics",
+    "sonarsource.sonarlint-vscode",
+    "tamasfe.even-better-toml",
+  ]
+}
