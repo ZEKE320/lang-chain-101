@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "lang-chain-playground"
+name = "lang-chain-101"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
@@ -7,6 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+langchain = "^0.1.11"
+openai = "^1.13.3"
+pydantic = "^2.6.3"
+langchain-openai = "^0.0.8"
 
 
 [build-system]

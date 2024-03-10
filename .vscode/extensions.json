@@ -1,19 +1,41 @@
 {
-  "recommendations": [
-    "donjayamanne.python-extension-pack",
-    "github.vscode-pull-request-github",
-    "ms-python.black-formatter",
-    "ms-python.flake8",
-    "ms-python.gather",
-    "ms-python.isort",
-    "ms-python.mypy-type-checker",
-    "ms-python.pylint",
-    "ms-python.vscode-pylance",
-    "ms-toolsai.datawrangler",
-    "ms-toolsai.jupyter-hub",
-    "ms-toolsai.jupyter",
-    "redhat.fabric8-analytics",
-    "sonarsource.sonarlint-vscode",
-    "tamasfe.even-better-toml",
-  ]
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+      "streetsidesoftware.code-spell-checker",
+      "ms-toolsai.jupyter",
+      "donjayamanne.python-extension-pack",
+      "github.vscode-pull-request-github",
+      "ms-python.black-formatter",
+      "ms-python.flake8",
+      "ms-python.gather",
+      "ms-python.isort",
+      "ms-python.mypy-type-checker",
+      "ms-python.pylint",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.datawrangler",
+      "ms-toolsai.jupyter-hub",
+      "ms-toolsai.jupyter",
+      "redhat.fabric8-analytics",
+      "sonarsource.sonarlint-vscode",
+      "tamasfe.even-better-toml",
+      "donjayamanne.git-extension-pack",
+      "github.copilot",
+      "mhutchie.git-graph",
+      "seatonjiang.gitmoji-vscode",
+      "oderwat.indent-rainbow",
+      "visualstudioexptteam.vscodeintellicode-completions",
+      "christian-kohler.path-intellisense",
+      "gruntfuggly.todo-tree",
+      "yzhang.markdown-all-in-one",
+      "yzane.markdown-pdf",
+      "davidanson.vscode-markdownlint",
+      "visualstudioexptteam.vscodeintellicode",
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": [
+
+	]
 }

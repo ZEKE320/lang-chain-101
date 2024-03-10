@@ -1,19 +1,49 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-  "name": "LangChain Playground",
+  "name": "LangChain 101",
+
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "containerEnv": {
+    "POETRY_VIRTUALENVS_IN_PROJECT": "true"
+  },
 
+  "runArgs": ["--env-file", ".devcontainer/.env"],
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/python": {
+      "version": "3.12"
+    },
+    "ghcr.io/devcontainers-contrib/features/poetry": {},
+    "ghcr.io/devcontainers/features/node": {},
+    "ghcr.io/devcontainers/features/java": {
+      "version": "latest",
+      "jdkDistro": "ms"
+    },
+    "ghcr.io/devcontainers/features/github-cli": {}
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "poetry install",
+
+  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
+      "settings": {
+        "sonarlint.ls.javaHome": "/usr/local/sdkman/candidates/java/current/"
+      },
       "extensions": [
         "christian-kohler.path-intellisense",
         "DavidAnson.vscode-markdownlint",
         "donjayamanne.git-extension-pack",
         "donjayamanne.python-extension-pack",
         "esbenp.prettier-vscode",
-        "GitHub.vscode-pull-request-github",
+        "github.vscode-pull-request-github",
         "GrapeCity.gc-excelviewer",
         "Gruntfuggly.todo-tree",
         "mechatroner.rainbow-csv",
@@ -25,13 +55,14 @@
         "ms-python.isort",
         "ms-python.mypy-type-checker",
         "ms-python.pylint",
+        "ms-python.vscode-pylance",
         "ms-toolsai.datawrangler",
         "ms-toolsai.jupyter-hub",
         "ms-toolsai.jupyter",
         "oderwat.indent-rainbow",
         "redhat.fabric8-analytics",
         "seatonjiang.gitmoji-vscode",
-        "SonarSource.sonarlint-vscode",
+        "sonarsource.sonarlint-vscode",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
         "VisualStudioExptTeam.vscodeintellicode-completions",
@@ -41,29 +72,7 @@
         "znck.grammarly"
       ]
     }
-  },
-
-  "containerEnv": {
-    "POETRY_VIRTUALENVS_IN_PROJECT": "true"
-  },
-
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/devcontainers/features/java": {},
-    "ghcr.io/devcontainers/features/python": {
-      "version": "3.12",
-      "installTools": false
-    }
-  },
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pipx install poetry && poetry install"
-
-  // Configure tool-specific properties.
-  // "customizations": {},
+  }
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
