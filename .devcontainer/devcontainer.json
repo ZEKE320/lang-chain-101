@@ -21,8 +21,7 @@
     "ghcr.io/devcontainers/features/java": {
       "version": "latest",
       "jdkDistro": "ms"
-    },
-    "ghcr.io/devcontainers/features/github-cli": {}
+    }
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
