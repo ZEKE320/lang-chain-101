@@ -68,7 +68,9 @@
         "VisualStudioExptTeam.vscodeintellicode",
         "yzane.markdown-pdf",
         "yzhang.markdown-all-in-one",
-        "znck.grammarly"
+        "znck.grammarly",
+        "GitHub.copilot",
+        "github.vscode-github-actions"
       ]
     }
   }
