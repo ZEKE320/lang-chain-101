@@ -48,13 +48,10 @@
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
-    "ghcr.io/devcontainers/features/java": {
-      "jdkDistro": "tem",
-      "version": "latest"
-    },
+    "ghcr.io/devcontainers/features/java": {},
     "ghcr.io/devcontainers/features/python": {
       "version": "3.12",
-      "installTools": true
+      "installTools": false
     }
   },
 
