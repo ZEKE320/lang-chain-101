@@ -1,23 +1,9 @@
 {
-    "version": "0.2",
-    "ignorePaths": [],
-    "dictionaryDefinitions": [],
-    "dictionaries": [],
-    "words": [
-        "devcontainer",
-        "devcontainers",
-        "isort",
-        "langchain",
-        "llms",
-        "mypy",
-        "openai",
-        "Pydantic",
-        "pylint",
-        "pyproject",
-        "rcfile",
-        "VIRTUALENVS",
-        "Xperia"
-    ],
-    "ignoreWords": [],
-    "import": []
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": ["computing-acronyms"],
+  "words": [],
+  "ignoreWords": [],
+  "import": []
 }

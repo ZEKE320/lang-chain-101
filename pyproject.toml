@@ -13,6 +13,7 @@ openai = "^1.13.3"
 pydantic = "^2.6.3"
 langchain-openai = "^0.0.8"
 langchain-anthropic = "^0.1.4"
+pymupdf = "^1.24.0"
 
 
 [tool.poetry.group.dev.dependencies]
